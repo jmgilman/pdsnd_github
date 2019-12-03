@@ -8,6 +8,10 @@ import glob
 import os
 import pandas as pd
 
+__author__ = "Joshua Gilman"
+__version__ = "0.1.0"
+__license__ = "MIT"
+
 COLS = {
     'start_time': 'Start Time',
     'end_time': 'End Time',

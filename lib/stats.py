@@ -5,6 +5,10 @@ Helper functions for calculating statistical data
 from datetime import datetime
 import lib.util as util
 
+__author__ = "Joshua Gilman"
+__version__ = "0.1.0"
+__license__ = "MIT"
+
 def calc_popular_times(data):
     """ Returns the most popular month, day of week, and hour of day
 

@@ -7,6 +7,10 @@ import lib.stats as stats
 import lib.util as util
 import pandas as pd
 
+__author__ = "Joshua Gilman"
+__version__ = "0.1.0"
+__license__ = "MIT"
+
 def ask_question(question):
     """ Asks the user to answer a yes/no question and returns the response
 
