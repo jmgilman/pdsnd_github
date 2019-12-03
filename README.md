@@ -103,3 +103,7 @@ Displaying rows 0 through 4...
 Would you like to see more raw data? (yes/no): no
 Would you like to start over? (yes/no): no
 ```
+
+## Credits
+
+Architecture and raw bike share data provided from motivateco.com. 
