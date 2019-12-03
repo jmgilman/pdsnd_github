@@ -31,7 +31,9 @@ Run the `bikeshare.py` file to begin the interactive session. Follow the prompts
 in order to begin the data processing. You will have the option to filter by
 month, day of the week, or both. After filtering, the above statistics will be
 outputted to the terminal. After the calculations are performed, you will have
-the option to view the raw data, paginated by 5 rows at a time.
+the option to view the raw data, paginated by 5 rows at a time. Finally, you
+will be offered to run the analysis again from the beginning, choosing new data
+and filters as needed.
 
 ## Example
 ```
