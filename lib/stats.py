@@ -8,6 +8,12 @@ import lib.util as util
 def calc_popular_times(data):
     """ Returns the most popular month, day of week, and hour of day
 
+    Performs the mode() operation on the given DataFrame for the `start_time`
+    month, day, and hour. Converts the numerical month and day into their 
+    respective string representations for readability. Also converts the hour
+    into the 12 hour AM/PM form to be sensitive to locality. Returns results in
+    a dictionary. 
+
     Args:
         data (DataFrame): The data to process
 
@@ -41,6 +47,11 @@ def calc_popular_times(data):
 def calc_popular_stations(data):
     """ Returns the most popular start station, end station, and trip
 
+    Performs the mode() operation on the given DataFrame for the `start_station`
+    and `end_station`. Groups by both the start and end station and then
+    identifies the max number of occurrences to determine the most popular
+    route being used. Returns the results in a dictionary.
+
     Args:
         data (DataFrame): the data to be processed
 
@@ -64,6 +75,10 @@ def calc_popular_stations(data):
 def calc_trip_durations(data):
     """ Returns total travel time and average travel time
 
+    Performs the sum() and mean() operation on the total trip time (end_time - 
+    start_time) to determine total and average times. Returns the result in a 
+    dictionary.
+
     Args:
         data (DataFrame): the data to be processed
 
@@ -86,6 +101,12 @@ def calc_trip_durations(data):
 def calc_user_unfo(data):
     """ Returns counts of each user type and gender, aas well as earliest, 
         most recent and most common year of birth where applicable
+
+        Calculates the counts of each user type. If `gender` exists in the given
+        DataFrame, calculates the count for each gender type. If `birth_year`
+        exists in the given DataFrame, calculates the earliest year using min(),
+        the most recent year using max(), and the most common year using mode().
+        Returns the result in a dictionary.
 
     Args:
         data (DataFrame): the data to be processed
